@@ -23,18 +23,19 @@
 	 so that the webpage doesn't attempt to load them as HTML -->
 <script id="entry-template" type="text/x-handlebars-template">
 		
-			<div class="project" id="project{{index}}">
-				<a href="#" class="thumbnail">
-					<img src="{{profilePic}}" alt="Lorem Pixel image" class="img">
-					<p>{{title}}</p>
-					<div class="like"><button class="btn btn-default likeBtn">Like</button></div>
-				</a>
-			</div>
+		<!-- this is the project div to create the grid variation for -->
+		<div class="project" id="project{{index}}">
+			<a href="#" class="thumbnail">
+				<img src="{{profilePic}}" alt="Lorem Pixel image" class="img">
+				<p>{{title}}</p>
+				<div class="like"><button class="btn btn-default likeBtn">Like</button></div>
+			</a>
+		</div>
 
 </script>
 
 		<div id="templatedProjects">
-		  <!-- templated project HTML code is injected here -->
+			<!-- don't touch this: templated project HTML code injected here -->
 		</div>
 
 	</div>

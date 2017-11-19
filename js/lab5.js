@@ -24,17 +24,17 @@ $(document).ready(function() {
 
 	var parentDiv = $("#templatedProjects");
 
-	var grid = JSON.parse(localStorage.getItem("grid"));
+	var choice = JSON.parse(localStorage.getItem("grid"));
 	
 	// start with a simple template
-	simpleData.grid = grid;
+	simpleData.grid = choice;
 	var html = template(simpleData);
 	// console.log(html);
 	parentDiv.append(html);
 
 	// now iterate through the complexData list and keep appending:
 	for (var i = 0; i < complexData.length; i++) {
-		complexData[i].grid = grid;
+		complexData[i].grid = choice;
 		var curData = complexData[i];
 		var curHtml = template(curData);
 		parentDiv.append(curHtml);
@@ -56,5 +56,10 @@ $(document).ready(function() {
 		}
 	});
 
-	// your code here
+	// insert click handler here
+	// so that it will be registered once the page has been loaded
+
 });
+
+// do not write click handler here!
+// (see comment just above this)

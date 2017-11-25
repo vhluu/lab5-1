@@ -35,6 +35,15 @@
 	 so that the webpage doesn't attempt to load them as HTML -->
 <script id="entry-template" type="text/x-handlebars-template">
 		
+	{{#if grid}}
+
+		<span class="together">
+			<img src="{{profilePic}}" class="grid">
+			<button class="likeBtn">Like</button>
+		</span>
+
+	{{else}}
+
 		<!-- this is the project div to create the grid variation for -->
 		<div class="project" id="project{{index}}">
 			<a href="#" class="thumbnail">
@@ -43,6 +52,8 @@
 				<div class="like"><button class="btn btn-default likeBtn">Like</button></div>
 			</a>
 		</div>
+
+	{{/if}}
 
 </script>
 

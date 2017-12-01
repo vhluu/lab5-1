@@ -57,6 +57,7 @@ $(document).ready(function() {
 	});
 
 	// insert click handler here
+
 	// so that it will be registered once the page has been loaded
 
 });

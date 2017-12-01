@@ -64,7 +64,7 @@ $(document).ready(function() {
 		//Tracker code
 		tracker = ga.getAll()[0];
 		tracker.send('event', 'like', 'click')
-	}
+	});
 });
 
 // do not write click handler here!

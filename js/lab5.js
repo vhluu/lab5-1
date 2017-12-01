@@ -59,7 +59,12 @@ $(document).ready(function() {
 	// insert click handler here
 
 	// so that it will be registered once the page has been loaded
-
+	$(".likeBtn").click(function() {
+		console.log("LIKE BUTTON CLICKED");
+		//Tracker code
+		tracker = ga.getAll()[0];
+		tracker.send('event', 'like', 'click')
+	}
 });
 
 // do not write click handler here!
